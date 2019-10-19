@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto",sans-serif;
+}
+
+body {
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("logo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+header {
+  width: auto;
+  overflow: auto;
+  margin-top: 2%;
+}
+
+.logo {
+  float: left;
+}
+
+.logo h2 {
+  color: #fff;
+  margin-left: 20px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  width: auto;
+  overflow: auto;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 6px 18px;
+}
+
+nav ul li:hover {
+  border: 0.2px solid #fff;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+}
+
+.text {
+  margin-top: 18%;
+}
+
+.text h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-family: monospace;
+}
+
+.buttons {
+  margin-left: 40%;
+  margin-top: 20px;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border: 1px solid #fff;
+  margin-right: 5px;
+}
+
+button a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+}
+
+.btn-1 {
+  background: #0984e3;
+  border: 1px solid #0984e3;
+}
+
+.btn-1 a {
+  color: #fff;
+}
+
+.btn-2:hover {
+  background: #0984e3;
+  border: 1px solid #0984e3;
+  transition: all 0.0.30s ease-in;
+}

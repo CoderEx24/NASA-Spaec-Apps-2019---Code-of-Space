@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/Explosion.ogg" type="AudioStream" id=1]
+[ext_resource path="res://2d/explode.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://assets/main_title.TTF"
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+font_data = SubResource( 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -5.87268
+margin_right = -5.87268
+
+[node name="Label" type="Label" parent="."]
+margin_left = 102.962
+margin_top = 131.873
+margin_right = 934.962
+margin_bottom = 368.873
+custom_fonts/font = SubResource( 2 )
+text = "GAME OVER
+
+A planet collided with the star"
+align = 1
+valign = 1
+
+[node name="explode" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+script = ExtResource( 2 )

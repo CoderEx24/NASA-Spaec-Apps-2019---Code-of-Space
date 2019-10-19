@@ -1,0 +1,106 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://2d/PlanetPropertiesController.gd" type="Script" id=1]
+[ext_resource path="res://assets/new_theme.tres" type="Theme" id=2]
+
+[node name="PlanetPropertiesController" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_right = 2.0
+script = ExtResource( 1 )
+
+[node name="NameLabel" type="Label" parent="."]
+margin_left = 100.0
+margin_top = 100.0
+margin_right = 182.0
+margin_bottom = 114.0
+text = "Planet Name"
+
+[node name="RadiusLabel" type="Label" parent="."]
+margin_left = 100.0
+margin_top = 200.0
+margin_right = 182.0
+margin_bottom = 214.0
+text = "Mass"
+
+[node name="MassLabel" type="Label" parent="."]
+margin_left = 100.0
+margin_top = 150.0
+margin_right = 180.0
+margin_bottom = 164.0
+text = "Radius"
+
+[node name="OrbtalRadiusLabel" type="Label" parent="."]
+visible = false
+margin_left = 100.0
+margin_top = 240.0
+margin_right = 190.0
+margin_bottom = 254.0
+text = "Oribtal Radius"
+
+[node name="NameEntry" type="LineEdit" parent="."]
+margin_left = 210.0
+margin_top = 90.0
+margin_right = 380.0
+margin_bottom = 118.0
+
+[node name="MassEntry" type="SpinBox" parent="."]
+margin_left = 210.0
+margin_top = 190.0
+margin_right = 390.0
+margin_bottom = 218.0
+max_value = 1.56933e+009
+
+[node name="RadiusEntry" type="SpinBox" parent="."]
+margin_left = 210.0
+margin_top = 140.0
+margin_right = 390.0
+margin_bottom = 168.0
+max_value = 1.87492e+009
+
+[node name="OrbtalRadiusEntry" type="SpinBox" parent="."]
+visible = false
+margin_left = 210.0
+margin_top = 230.0
+margin_right = 390.0
+margin_bottom = 258.0
+max_value = 1.87492e+009
+
+[node name="Add" type="Button" parent="."]
+margin_left = 142.0
+margin_top = 470.0
+margin_right = 350.0
+margin_bottom = 500.0
+theme = ExtResource( 2 )
+text = "Add Planet"
+
+[node name="Edit" type="Button" parent="."]
+visible = false
+margin_left = 142.0
+margin_top = 520.0
+margin_right = 350.0
+margin_bottom = 550.0
+theme = ExtResource( 2 )
+text = "Edit Planet"
+
+[node name="Remove" type="Button" parent="."]
+margin_left = 142.0
+margin_top = 568.0
+margin_right = 350.0
+margin_bottom = 598.0
+theme = ExtResource( 2 )
+text = "Remove Planet"
+
+[node name="Title" type="Label" parent="."]
+margin_left = 142.0
+margin_top = 30.0
+margin_right = 312.0
+margin_bottom = 78.0
+text = "Planet Properties
+"
+align = 1
+valign = 1
+autowrap = true
+[connection signal="pressed" from="Add" to="." method="_on_Add_pressed"]
+[connection signal="pressed" from="Remove" to="." method="_on_Remove_pressed"]
